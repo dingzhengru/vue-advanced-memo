@@ -35,8 +35,12 @@
 
   <hr />
   <h2>Transition</h2>
+  <p>此標籤是專門用來處理 "vue 事件"切換狀態時的轉變動畫，ex: v-if, v-show, vue-router 的切換頁面</p>
   <h3>TransitionBasic</h3>
   <TransitionBasic />
+
+  <h3>TransitionChangeStyle</h3>
+  <TransitionChangeStyle />
 </div>
 </template>
 
@@ -46,6 +50,7 @@ import SlotProps from '@/components/SlotProps'
 import SlotForLoopData from '@/components/SlotForLoopData'
 
 import TransitionBasic from '@/components/TransitionBasic'
+import TransitionChangeStyle from '@/components/TransitionChangeStyle'
 
 export default {
   name: 'App',
@@ -53,7 +58,8 @@ export default {
     SlotBasic,
     SlotProps,
     SlotForLoopData,
-    TransitionBasic
+    TransitionBasic,
+    TransitionChangeStyle
   },
   data() {
     return {

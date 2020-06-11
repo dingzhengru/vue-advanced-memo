@@ -28,14 +28,14 @@ App.vue
 ```
 
 ## Transition
-* 利用 vue 設置 css3 中的 transition 屬性(轉變動畫)
+* 用來專門設置 vue 的 出現、消失、切換等事件時的轉變動畫
 * 利用 transition 標籤設置 name 屬性，此 name 就會去找對應的 class，ex: fade-enter-active，fade 就是設置的 name
 * v-enter-active: 可以在此設置 transition 屬性，告訴"進入動畫"的屬性、動畫時間、延遲時間，ex: transition: all 1s;
 * v-leave-active: 跟上面的功能一樣，只是換成設置"離開動畫"
-* v-enter:
-* v-enter-to
-* v-leave
-* v-leave-to
+* v-enter: enter 時的初始狀態
+* v-enter-to: enter 後的最後狀態
+* v-leave: leave 時的初始狀態
+* v-leave-to: leave 後的最終狀態
 * 動畫順序可以參考官方教學中的圖: https://vuejs.org/v2/guide/transitions.html#Transition-Classes
 
-<img src="https://vuejs.org/images/transition.png" height="200">
+<img src="https://vuejs.org/images/transition.png" height="300">

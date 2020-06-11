@@ -23,26 +23,13 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
 .fade-enter-active, .fade-leave-active {
-  transition: all 1s;
+  transition: opacity .5s;
 }
-
-.fade-enter {
-  background: green;
-}
-
-.fade-enter-to {
-  background: blue;
-}
-
-.fade-leave{
-  background: orange;
-}
-
-.fade-leave-to {
-  background: red;
+.fade-enter, .fade-leave-to {
+  opacity: 0;
 }
 
 </style>
