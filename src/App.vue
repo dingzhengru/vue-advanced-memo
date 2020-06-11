@@ -12,7 +12,6 @@
   </SlotBasic>
   
   <h3>SlotProps</h3>
-
   <SlotProps>
     <template v-slot:default="itemProps">
       {{ itemProps.item.name }}
@@ -35,7 +34,9 @@
   </SlotForLoopData>
 
   <hr />
-
+  <h2>Transition</h2>
+  <h3>TransitionBasic</h3>
+  <TransitionBasic />
 </div>
 </template>
 
@@ -44,12 +45,15 @@ import SlotBasic from '@/components/SlotBasic'
 import SlotProps from '@/components/SlotProps'
 import SlotForLoopData from '@/components/SlotForLoopData'
 
+import TransitionBasic from '@/components/TransitionBasic'
+
 export default {
   name: 'App',
   components: {
     SlotBasic,
     SlotProps,
-    SlotForLoopData
+    SlotForLoopData,
+    TransitionBasic
   },
   data() {
     return {
