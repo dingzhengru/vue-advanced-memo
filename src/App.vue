@@ -41,6 +41,14 @@
 
   <h3>TransitionAnimation</h3>
   <TransitionAnimation />
+
+  <h2>Dynamic & Async Components</h2>
+  <h3>動態切換 component & 動態載入 component</h3>
+  <button @click="currentComponent == 'DynamicTest01' ? currentComponent = 'DynamicTest02' : currentComponent = 'DynamicTest01'">
+    切換
+  </button>
+  <component :is="currentComponent"></component>
+
 </div>
 </template>
 
@@ -59,7 +67,9 @@ export default {
     SlotProps,
     SlotForLoopData,
     TransitionBasic,
-    TransitionAnimation
+    TransitionAnimation,
+    DynamicTest01: () => import('@/components/DynamicTest01'),
+    DynamicTest02: () => import('@/components/DynamicTest02')
   },
   data() {
     return {
@@ -84,7 +94,8 @@ export default {
           name: 'item-5',
           price: 5000
         },
-      ]
+      ],
+      currentComponent: 'DynamicTest01'
     }
   }
 }

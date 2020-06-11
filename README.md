@@ -40,3 +40,18 @@ App.vue
 * 動畫順序可以參考官方教學中的圖: https://vuejs.org/v2/guide/transitions.html#Transition-Classes
 
 <img src="https://vuejs.org/images/transition.png" height="300">
+
+## Dynamic & Async Components
+* 動態切換 component，利用 is 屬性可以隨時切換目前的 component，利用 keep-alive 標籤可以選擇是否保留狀態
+* 動態載入 component，主要是想要需要時才載入，避免浪費不必要的載入時間 & 頻寬
+
+動態切換 component
+```
+<component v-bind:is="currentTabComponent"></component>
+```
+動態載入 component
+```
+components: {
+  'my-component': () => import('.vue')
+}
+```
