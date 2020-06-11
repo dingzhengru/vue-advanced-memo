@@ -39,8 +39,8 @@
   <h3>TransitionBasic</h3>
   <TransitionBasic />
 
-  <h3>TransitionChangeStyle</h3>
-  <TransitionChangeStyle />
+  <h3>TransitionAnimation</h3>
+  <TransitionAnimation />
 </div>
 </template>
 
@@ -50,7 +50,7 @@ import SlotProps from '@/components/SlotProps'
 import SlotForLoopData from '@/components/SlotForLoopData'
 
 import TransitionBasic from '@/components/TransitionBasic'
-import TransitionChangeStyle from '@/components/TransitionChangeStyle'
+import TransitionAnimation from '@/components/TransitionAnimation'
 
 export default {
   name: 'App',
@@ -59,7 +59,7 @@ export default {
     SlotProps,
     SlotForLoopData,
     TransitionBasic,
-    TransitionChangeStyle
+    TransitionAnimation
   },
   data() {
     return {
